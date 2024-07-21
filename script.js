@@ -48,4 +48,9 @@ const getPokemonData = async () => {
   }
 };
 
-searchBtn.addEventListener("submit", getPokemonData);
+searchBtn.addEventListener("click", getPokemonData);
+searchInput.addEventListener("keydown", (e) => {
+  if (e.key == "Enter") {
+    getPokemonData();
+  }
+});
