@@ -48,4 +48,4 @@ const getPokemonData = async () => {
   }
 };
 
-searchBtn.addEventListener("click", getPokemonData);
+searchBtn.addEventListener("click, e", getPokemonData);
